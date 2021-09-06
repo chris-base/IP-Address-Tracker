@@ -17,7 +17,56 @@
 	<title>IP Address Tracker</title>
 </head>
 
+<div id='pattern-bg-container'></div>
+
 <body>
+
+	<div id='map-container'></div>
+
+	<div id='title-and-search-container'>
+
+		<div id='title-container'>
+			<h1>IP Address Tracker</h1>
+		</div>
+
+		<div id='search-container'>
+			<form id='search-form' for='search'>
+				<input type='text' id='search' placeholder="Search for any IP address or domain" />
+				<button type='submit' id='submit' value=''></button>
+			</form>
+		</div>
+
+	</div>
+
+	<div id='ip-info-container'>
+
+		<div class='ip-info'>
+			<p class='ip-info-section'>ip address</p>
+			<p class='ip-info-info'>192.168.1.1</p>
+		</div>
+
+		<hr class='hr' />
+
+		<div class='ip-info'>
+			<p class='ip-info-section'>location</p>
+			<p class='ip-info-info'>Brooklyn, NY 10001</p>
+		</div>
+
+		<hr class='hr' />
+
+		<div class='ip-info'>
+			<p class='ip-info-section'>timezone</p>
+			<p class='ip-info-info'>UTC-05:00</p>
+		</div>
+
+		<hr class='hr' />
+
+		<div class='ip-info'>
+			<p class='ip-info-section'>isp</p>
+			<p class='ip-info-info'>SpaceX Starlink</p>
+		</div>
+
+	</div>
 
 	<script type="text/javascript" src='script.js'></script>
 </body>
