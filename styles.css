@@ -66,13 +66,31 @@ html {
 }
 
 #search {
-  border: 1px solid green;
+  border: none;
   border-radius: 15px 0 0 15px;
   height: 100%;
   width: 85%;
   font-size: 18px;
-  padding: 0 5px 0 20px;
+  padding: 0px 5px 0px 20px;
   color: #2b2b2b;
+}
+
+@-webkit-keyframes notValidEntry {
+  0% {
+    background-color: #ff7373;
+  }
+  100% {
+    background-color: white;
+  }
+}
+
+@keyframes notValidEntry {
+  0% {
+    background-color: #ff7373;
+  }
+  100% {
+    background-color: white;
+  }
 }
 
 #submit {
