@@ -48,31 +48,35 @@
 	<div id='ip-info-container'>
 
 		<div class='ip-info'>
-			<p class='ip-info-section'>ip address</p>
-			<p class='ip-info-info'>192.168.1.1</p>
+			<p class='ip-info-section' id='ip-or-domain-text'>ip address</p>
+			<p class='ip-info-info' id='ip-address-text'>-</p>
 		</div>
 
 		<hr class='hr' />
 
 		<div class='ip-info'>
 			<p class='ip-info-section'>location</p>
-			<p class='ip-info-info'>Brooklyn, NY 10001</p>
+			<p class='ip-info-info' id='ip-location-text'>-</p>
 		</div>
 
 		<hr class='hr' />
 
 		<div class='ip-info'>
 			<p class='ip-info-section'>timezone</p>
-			<p class='ip-info-info'>UTC-05:00</p>
+			<p class='ip-info-info' id='ip-timezone-text'>-</p>
 		</div>
 
 		<hr class='hr' />
 
 		<div class='ip-info'>
 			<p class='ip-info-section'>isp</p>
-			<p class='ip-info-info'>SpaceX Starlink</p>
+			<p class='ip-info-info' id='ip-isp-text'>-</p>
 		</div>
 
+	</div>
+
+	<div id='show-users-ip-container'>
+		<button id='show-user-ip-button'>Use your ip address</button>
 	</div>
 
 	<script type="module" src='tokens.js'></script>
