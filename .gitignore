@@ -1,10 +1,6 @@
 .DS_Store
 tokens.js
-node_modules
-.firebase
 public
 .firebaserc
-database.rules.json
 firebase.json
-package-lock.json
-package.json
+.firebase
