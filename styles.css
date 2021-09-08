@@ -206,4 +206,56 @@ html {
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
 }
+
+@media (max-width: 1050px) {
+  #ip-info-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 760px) {
+  #title-and-search-container {
+    margin-top: 2px;
+  }
+  #ip-info-container {
+    margin-top: 20px;
+    width: 75%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .ip-info {
+    width: 100%;
+    padding: 0px;
+  }
+  .ip-info-section {
+    width: 100%;
+  }
+  .ip-info-info {
+    font-size: 20px;
+  }
+  .hr {
+    display: none;
+  }
+  #show-users-ip-container {
+    margin-top: 20px;
+  }
+  #show-user-ip-button {
+    width: 90%;
+  }
+}
+
+@media (max-width: 550px) {
+  #search-container {
+    width: 90%;
+  }
+  #ip-info-container {
+    width: 90%;
+  }
+}
 /*# sourceMappingURL=styles.css.map */

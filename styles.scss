@@ -167,3 +167,64 @@ html {
 		transform: scale(1.03);
 	}
 }
+
+@media (max-width: 1050px) {
+
+	#ip-info-container {
+		width: 90%;
+	}
+
+}
+
+@media (max-width: 760px) {
+
+	#title-and-search-container {
+		margin-top: 2px;
+	}
+
+	#ip-info-container {
+		margin-top: 20px;
+		width: 75%;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.ip-info {
+		width: 100%;
+		padding: 0px;
+	}
+
+	.ip-info-section {
+		width: 100%;
+	}
+
+	.ip-info-info {
+		font-size: 20px;
+	}
+
+	.hr {
+		display: none;
+	}
+
+	#show-users-ip-container {
+		margin-top: 20px;
+	}
+
+	#show-user-ip-button {
+		width: 90%;
+	}
+
+}
+
+@media (max-width: 550px) {
+
+	#search-container {
+		width: 90%;
+	}
+
+	#ip-info-container {
+		width: 90%;
+	}
+
+}

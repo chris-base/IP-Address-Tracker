@@ -14,7 +14,7 @@ This is a solution to the [IP address tracker challenge on Frontend Mentor](http
 
 ## Overview
 
-
+This application allows the user to lookup an ip address or domain and get information about the location, timezone, and isp for the inputed domain/ip. This project uses and API from [IP Geolocation API by IPify](https://geo.ipify.org/) to get information on an ip address/domain. This application also uses [LeafletJS](https://leafletjs.com/) to create a simple, but very effectiive map to show the user the location of the inputed domain/ip.
 
 ### The challenge
 
@@ -27,11 +27,11 @@ Users should be able to:
 
 ### Screenshot
 
-![]()
+![](./assets/IP-Address-Tracker-cbase-ss.png)
 
 ### Links
 
-- Live Site URL: [Live Site](https://chris-base.github.io/IP-Address-Tracker/)
+- Live Site URL: [Live Site]()
 - Solution URL: [My Solution]()
 
 ### Built with
@@ -49,7 +49,7 @@ Users should be able to:
 
 ### What I learned
 
-
+This was my first project using API's and I really enjoyed using them because of ES8 async/await with js is very useful and good in terms of readability. I learned about Promises and how they can not only be used with just API, but also any process that runs asynchronously with your application.
 
 ## Author
 
