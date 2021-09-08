@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Live Site]()
-- Solution URL: [My Solution]()
+- Live Site URL: [Live Site](https://ip-address-tracker-cbase.firebaseapp.com/)
+- Solution URL: [My Solution](https://www.frontendmentor.io/solutions/ip-address-tracker-made-with-html-scss-javascript-and-api-WTi4rShWA)
 
 ### Built with
 
