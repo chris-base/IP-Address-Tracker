@@ -2,9 +2,11 @@ import {
 	myTokens
 } from './tokens.js';
 
+// create new map object
 let mymap = L.map('map-container').setView([51.5, -0.09], 2);
 const getURL = (ipOrDomain, userInput) => `https://geo.ipify.org/api/v1?apiKey=${myTokens.ip_geo_key}&${ipOrDomain}=${userInput}`;
 
+// add marker to map
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
 	attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
 	maxZoom: 18,
@@ -14,6 +16,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 	accessToken: myTokens.mapbox_token,
 }).addTo(mymap);
 
+// get user input and check if input is valid enough for api check
 const startSearch = e => {
 
 	document.getElementById('show-user-ip-button').style.display = 'none';
@@ -45,6 +48,7 @@ const startSearch = e => {
 
 document.getElementById('search-form').addEventListener('submit', startSearch);
 
+// api calling
 const fetchData = async (ipOrDomain, userInput) => {
 
 	let response = await fetch(getURL(ipOrDomain, userInput));
@@ -62,6 +66,7 @@ const fetchData = async (ipOrDomain, userInput) => {
 
 }
 
+// update elements to display information about ip
 const showIPData = (results) => {
 
 	document.getElementById('ip-address-text').innerHTML = results.ip;
@@ -74,6 +79,7 @@ const showIPData = (results) => {
 
 }
 
+// for when the user decides to use their own ip
 const getUserIP = async () => {
 
 	document.getElementById('show-user-ip-button').style.display = 'none';
